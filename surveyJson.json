@@ -1,0 +1,34 @@
+{
+ "logoPosition": "right",
+ "pages": [
+  {
+   "name": "page1",
+   "elements": [
+    {
+     "type": "boolean",
+     "name": "question7",
+     "title": "Are you Feeling like vomiting?"
+    },
+    {
+     "type": "checkbox",
+     "name": "question1",
+     "title": "What is your age?",
+     "choices": [
+      {
+       "value": "item1",
+       "text": "10 Years Old"
+      },
+      {
+       "value": "item2",
+       "text": "20 Years Old"
+      },
+      {
+       "value": "item3",
+       "text": "30 Years Old"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

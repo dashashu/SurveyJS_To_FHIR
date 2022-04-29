@@ -1,0 +1,80 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+    ]
+  },
+  "name": "new_age_related_questions",
+  "title": "NEw Age related Questions",
+  "status": "draft",
+  "item": [
+    {
+      "item": {
+        "linkId": "Shivam likned",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72514-3",
+            "display": "Are you Feeling like vomiting?"
+          }
+        ],
+        "text": "Are you Feeling like vomiting?",
+        "type": "boolean",
+        "required": "false"
+      }
+    },
+    {
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "check-box",
+                    "display": "Check Box"
+                  }
+                ],
+                "text": "Check Box"
+              }
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "10 years old",
+                "display": "10 Years Old"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "20 years old",
+                "display": "20 Years Old"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "30 years old",
+                "display": "30 Years Old"
+              }
+            }
+          ],
+          "linkId": "ashutosh linked",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "72514-3",
+              "display": "30 Years Old"
+            }
+          ],
+          "text": "What is your age?",
+          "type": "group",
+          "required": "false"
+        }
+      ]
+    }
+  ]
+}
